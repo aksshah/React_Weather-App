@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import React, {useState} from 'react';
+import SearchBox from './components/search-box/search-box';
+import WeatherBox from './components/weather-box/weather-box';
+import InitialView from './components/initial-view/initial-view';
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  
+  const [displayData, setDisplaydata] = useState('');
+  const displayNewSearchData = (searchData) => {
+    setDisplaydata(() => {
+      return(searchData);
+    });
+  }
+
+  if(displayData !== ''){
+    return (
+      <div className="app">
+        <main>
+          <SearchBox onSearch={displayNewSearchData}></SearchBox>
+          <WeatherBox displayData={displayData}></WeatherBox>
+        </main>
+      </div>
+    );
+  }else{
+    return (
+      <div className="app">
+        <main>
+          <SearchBox onSearch={displayNewSearchData}></SearchBox>
+          <InitialView></InitialView>
+        </main>
+      </div>
+    );
+  }
+  
+
 }
 
 export default App;
