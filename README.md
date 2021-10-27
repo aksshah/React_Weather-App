@@ -14,3 +14,5 @@ Step 3 - Run 'npm i' to install required modules
 Step 4 - Run 'npm start'
 
 Step 5 - Enter the name of the city and hit search(or press enter)!
+
+![demo](https://github.com/aksshah/React_Weather-App/blob/main/demo.gif)
