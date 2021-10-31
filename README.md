@@ -3,7 +3,12 @@
 User interface is separated using different fuctional components.
 Weather data gets collected in Search component and passed to components responsible to display it, using State and Props. 
 
-USAGE:
+
+Checkout live demo here: https://weatherly-using-react.herokuapp.com/
+
+
+
+Manual:
 
 Step 1 - Grab the .zip
 
@@ -15,4 +20,4 @@ Step 4 - Run 'npm start'
 
 Step 5 - Enter the name of the city and hit search(or press enter)!
 
-![demo](https://github.com/aksshah/React_Weather-App/blob/main/demo.gif)
+
