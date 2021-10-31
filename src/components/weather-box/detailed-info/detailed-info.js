@@ -4,7 +4,7 @@ import './detailed-info.scss';
 const DetailedInfo = (props) => { 
     return(
         <div className="detailed-info">       
-            <div className="sunrise-sunset">
+            {/* <div className="sunrise-sunset">
                 <div className="sunrise">
                     <span className="label">Sunrise</span>
                     {props.displayData.sunrise}
@@ -13,7 +13,7 @@ const DetailedInfo = (props) => {
                     <span className="label">Sunset</span>
                     {props.displayData.sunset}
                 </div>
-            </div>
+            </div> */}
             <ul>
                <li>
                     <span className="label">Feels Like</span>
