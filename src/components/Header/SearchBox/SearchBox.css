@@ -1,0 +1,32 @@
+.searchbox input {
+    padding: 7px 15px;
+    outline: none;
+    border-radius: 50px;
+    color: #454545;
+    font-size: 16px;
+    -webkit-appearance: none;
+    background: white;
+    width: calc(100% - 20px);
+    border: 1px solid white;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.searchbox input::placeholder {
+    color: white;
+}
+
+.input_wrapper {
+    max-width: 800px;
+    margin: 10px 0px;
+    width: calc(100% - 30px);
+}
+
+@media screen and (min-width:1440px) {
+    .input_wrapper {
+        position: fixed;
+        transform: translate(-50%, 0px);
+        left: 50%;
+        width: 610px;
+        top: 18px;
+    }
+}

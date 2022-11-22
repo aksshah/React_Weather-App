@@ -1,0 +1,30 @@
+{
+    "SearchBox":{
+        "placeholder":"Stadtname eingeben"
+    },
+    "Navigation":{
+        "current":"Aktuell",
+        "forecast":"Vorhersage"
+    },
+    "WeatherData":{
+        "dataNotAvailable":"Daten leider nicht verfügbar",
+        "cityNotFound":"Achtung! Stadt nicht gefunden.",
+        "region":"Region",
+        "timezone":"Zeitzone",
+        "date-time":"Datum-Zeit",
+        "feels-like":"Gefühlt",
+        "humidity":"Luftfeuchtigkeit",
+        "visibility":"Sichtbarkeit",
+        "wind-speed":"Windgeschwindigkeit",
+        "wind-direction":"Windrichtung",
+        "3-day-forecast":"3-Tage-Vorhersage",
+        "date":"Datum",
+        "average-temperature":"Durchschnittliche Temperatur",
+        "min-temp":"Min. Temp",
+        "max-temp":"Max. Temp",
+        "sunrise":"Sonnenaufgang",
+        "sunset":"Sonnenuntergang",
+        "show-hourly-details":"Stündliche Wettervorhersage anzeigen",
+        "hide-hourly-details":"Stündliche Wettervorhersage ausblenden"
+    }
+}

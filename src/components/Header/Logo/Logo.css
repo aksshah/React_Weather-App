@@ -1,0 +1,20 @@
+.headline{
+    font-size: 35px;
+    margin: 30px 100px 0px 0px;
+    font-style: italic;
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5));
+}
+h2{
+    margin: 0;
+}
+sup{
+    font-size: 14px;
+    margin-left: 5px;
+    font-weight: lighter;
+}
+@media screen and (min-width:768px) {
+    .headline{
+        font-size: 35px;
+        margin: 0px 100px 0px 0px;
+    }
+}

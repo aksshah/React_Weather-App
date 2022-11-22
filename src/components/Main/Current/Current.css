@@ -1,0 +1,79 @@
+.error {
+    font-size: 30px;
+    color: #e4e4e4;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    font-weight: lighter;
+    transform: translate(-50%, -50%);
+}
+
+h4.current_weather_temperature {
+    font-size: 75px;
+    margin: 0;
+    font-weight: normal;
+}
+
+@media screen and (min-width:768px) {
+    h4.current_weather_temperature {
+        font-size: 100px;
+    }
+}
+
+h4.current_weather_temperature span {
+    font-size: 60px;
+    margin-left: -29px;
+}
+
+.image_wrapper p {
+    margin: 0px 0px 10px 0px;
+    font-weight: bold;
+}
+
+.essential_data {
+    display: flex;
+    align-items: center;
+}
+
+.essential_data+.additional_data p .value {
+    font-size: 20px;
+}
+
+.essential_data+.additional_data {
+    background: white;
+    color: #454545;
+    padding: 20px;
+    flex-wrap: wrap;
+    width: fit-content;
+}
+.Dark .essential_data+.additional_data {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.essential_data+.additional_data p {
+    margin: 10px 50px 10px 0px;
+    width: fit-content;
+    max-width: 140px;
+}
+
+.essential_data+.additional_data p:last-of-type{
+    margin-right: 0px;
+}
+
+.location_details_container {
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.location_details_extra p {
+    margin: 5px 10px 0px 0px;
+}
+
+.location_details_extra .title {
+    font-weight: bold;
+}
+
+.location_details_extra {
+    display: flex;
+}

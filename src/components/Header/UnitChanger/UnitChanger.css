@@ -1,0 +1,24 @@
+.unit_changer {
+    position: absolute;
+    left: 244px;
+    display: flex;
+    align-items: center;
+}
+
+.unit_changer button {
+    background: none;
+    box-shadow: none;
+    border: none;
+    color: white;
+    margin: 0px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+@media screen and (min-width:768px) {
+    .unit_changer {
+        left: auto;
+        top: 35px;
+        right: 30px;
+    }
+}

@@ -1,0 +1,130 @@
+.card{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 15px;
+    margin: 0px 15px 15px 0px;
+    text-align: left;
+    background: rgba(255,255,255,0.9);
+    min-width: 170px;
+    width: calc(100% - 30px);
+    color: darkslategrey;
+    position: relative;
+}
+.card button{
+    position: absolute;
+    right: 20px;
+    left: auto;
+    bottom: 20px;
+    background: none;
+    box-shadow: none;
+    border: none;
+    margin-bottom: 0px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.card button::after{
+    content: '';
+    height: 0.5px;
+    background: #454545;
+    display: block;
+    margin-top: 2px;
+}
+.Dark .card button:after{
+    background: white;
+}
+.essential_data_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.date_time{
+    margin: 0px;
+}
+.temp{
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0px 0px 0px 20px;
+    font-weight: bold;
+}
+.temp span{
+    font-size: 40px;
+    margin-top: 20px;
+    display: block;
+    font-weight: normal;
+}
+.card > * {
+    margin: 10px 0px;
+}
+.compact_view{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.compact_view .image{
+    margin: 0;
+    width: 90px;
+}
+.compact_view .condition{
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+}
+.additional_data{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width:fit-content;
+    flex-wrap: wrap;
+    margin: 0px 0px 30px 0px;
+}
+.additional_data:first-of-type{
+    margin-top: 0px;
+}
+.additional_data .value{
+    font-size: 22px;
+    text-align: left;
+    width: 100%;
+}
+.additional_data .title{
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+}
+.additional_data .span{
+    width: 100%;
+}
+.additional_data p{
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    margin: 5px 50px 0px 0px;
+}
+@media screen and (min-width:786px){
+    .additional_data p{
+        margin: 0px 50px 0px 0px;
+        width: fit-content;
+    }
+}
+.Dark .card{
+    background: rgba(0,0,0,0.7);
+}
+.Dark .card *{
+    color: white;
+}
+.detailed_view{
+    margin: 0px;
+    overflow: scroll;
+    width: 100%;
+    margin-bottom: 60px;
+}
+.detailed_view::-webkit-scrollbar{
+    display: none;
+}
+.compact_view{
+    min-width: 170px;
+}

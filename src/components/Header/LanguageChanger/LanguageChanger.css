@@ -1,0 +1,23 @@
+.language_changer {
+    position: absolute;
+    display: flex;
+    left: 15px;
+}
+
+.language_changer button {
+    background: none;
+    box-shadow: none;
+    border: none;
+    color: white;
+    margin: 0px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+@media screen and (min-width:768px) {
+    .language_changer {
+        left: auto;
+        right: 288px;
+        top: 35px;
+    }
+}

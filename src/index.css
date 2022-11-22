@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body::before{
+  content: '';
+  background: rgb(60,145,199);
+  background: -moz-linear-gradient(180deg, rgba(60,145,199,1) 0%, rgba(186,213,230,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(60,145,199,1) 0%, rgba(186,213,230,1) 100%);
+  background: linear-gradient(180deg, rgba(60,145,199,1) 0%, rgba(186,213,230,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3c91c7",endColorstr="#bad5e6",GradientType=1);
+  min-height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: -1;
+}
+body.Dark::before{
+  background: url(/public/background-night.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  filter: brightness(0.7);
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
